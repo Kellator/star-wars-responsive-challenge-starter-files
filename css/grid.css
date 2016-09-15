@@ -8,18 +8,20 @@
 (12)gutters = 20px, 1/2 gutter on edges
 */
 
-.row {
+main {
 	max-width: 1000px;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin: 0px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /*clearfix*/
 .row::before,
 .row::after{
 	display: table;
-	content: "";
+	content: ' ';
 }
 
 .row::after {
@@ -29,7 +31,7 @@
 /*float for all elements to line up,
 padding is gutter (each side is 1/2 of 20px)
 10px/960px = 1.041666%*/
-.col_4{
+.col_4 {
 	float: left;
 	padding-left: 1.04666%;
 	padding-right: 1.04666%;
@@ -42,7 +44,7 @@ padding is gutter (each side is 1/2 of 20px)
 
 /*non-mobile device screens*/
 @media only screen and (min-width: 640px) {
-	.col_4 {
-		width: 33.3%
-	}
+.col_4 {
+	width: 33.3%
+}
 }
